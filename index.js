@@ -51,19 +51,20 @@ function showPrize(){
     document.getElementById("empty1").style.display="block";
     document.getElementById("prize").style.display="block";
     document.getElementById("empty2").style.display="block";
+    if(screen.width <= 700)
     document.getElementById("container").style.marginTop = "50px"; 
 }
 
 function spin(){
     
-    for (var i = 0; i < 70; i++) { 
+    for (var i = 0; i < 90; i++) { 
         if(i<1){
-            setTimeout(confetti, 3600);
-            setTimeout(showPrize, 3600);
-            setTimeout(numberChangeFix, (70-i)*50);
+            setTimeout(confetti, 4600);
+            setTimeout(showPrize, 4600);
+            setTimeout(numberChangeFix, (90-i)*50);
         }
         else{
-            setTimeout(numberChange, (70-i)*50);
+            setTimeout(numberChange, (90-i)*50);
         }
     } 
 }
