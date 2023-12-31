@@ -4,7 +4,7 @@ function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
-var arr = [2165,2166,2167,2168,2169,2170,2171,2172,2173,2174,2175,2176,2177,2178,2179,2180,2181,2182,2183,2184,2185,2186,2187,2188,2189,2190,2191,2192,2193,2194,2195,2196,2197,2198,2199,2200,2201,2202,2203,2204,2205,2206];
+var arr = [2036, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047, 2048, 2049, 2050, 2051, 2052, 2053, 2054, 2055, 2056, 2057, 2058, 2059, 2060, 2061, 2062, 2063, 2064, 2065, 2066, 2067, 2068, 2069, 2070, 2071, 2072, 2073, 2074, 2075, 2076, 2077, 2078, 2079, 2080, 2081];
 
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
@@ -45,7 +45,7 @@ function numberChangeFix(){
     boxes[1].innerHTML = arr[1];
     boxes[2].innerHTML = arr[2];
     boxes[3].innerHTML = arr[3];
-    boxes[4].innerHTML = 2196;
+    boxes[4].innerHTML = 2066;
     boxes[5].innerHTML = arr[5];
     boxes[6].innerHTML = arr[6];
     boxes[7].innerHTML = arr[7];
