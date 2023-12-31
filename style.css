@@ -1,0 +1,120 @@
+:root {
+    --main-color:#D9ED92;
+    --grey:#ADB5BD;
+    --dark-grey:#6C757D;
+    --lime:#9EF01A;
+    --dark-lime:#70E000;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:var(--main-color);
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    font-size:20px;
+    overflow:scroll;
+}
+
+#prize, #empty1, #empty2{
+  display:none;
+}
+#prize{
+  transform: translateX(5px);
+}
+.container{
+    display:grid;
+    grid-template-columns: 110px 110px 110px;
+    padding:10px;
+    row-gap: 5px;
+    column-gap: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.row1,.row2,.row3{
+    height:50px;
+    width:100px;
+    background-color: var(--grey);
+    border-radius: 1rem;
+    border : 5px solid var(--dark-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row2.col2{
+    background-color: var(--lime);
+    border : 5px solid var(--dark-lime) !important;
+}
+
+p{
+    color:white;
+    display:inline-block;
+}
+
+.button {
+    background-color: #FB8500; /* Blue background color */
+    width:100%;
+    transform: translateX(5px);
+    border: none; /* Remove border */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around text */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it inline-block */
+    font-size: 20px; /* Font size */
+    font-weight:bold;
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  /* Hover effect */
+  .button:hover {
+    background-color: #FFB703; /* Darker blue on hover */
+  }
+  
+  /* Active effect (when button is clicked) */
+  .button:active {
+    background-color: #FFB703; /* Even darker blue when active */
+  }
+
+  .buttonDiv{
+    background-color: var(--main-color) !important;
+    border-radius: none !important;
+    border : none !important;
+  }
+
+  .image img{
+    width:100%;
+    position: relative;
+    top: 50%;
+    margin-bottom:50px;
+    transform: translateX(20%)
+  }
+  #prize img{
+    margin-top:0;
+    transform: translate(20%,-50%);
+    position:relative;
+  }
+  .image{
+    grid-column: 1 / span 2;
+
+  }
+
+@media screen and (max-width: 700px){
+    body{
+        font-size:25px;
+    }
+    .row1,.row2,.row3{
+        width:100px;
+        height:100px;
+    }
+    .container{
+        margin-top:10px;
+        grid-template-columns: 110px 110px 110px;
+    }
+}
